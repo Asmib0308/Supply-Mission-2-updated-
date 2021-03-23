@@ -37,7 +37,9 @@ function setup() {
 	redBox3 = Bodies.rectangle(500,610,20,100, {isStatic:true});
 	World.add(world,redBox3);
 
-	packageBody = Bodies.circle(width/2 , 200 , 18 , {restitution:0.8,isStatic:true});
+	ellipseMode(CENTER);
+
+	packageBody = Bodies.circle(width/2 , 200 , 24 , {restitution:0.8,isStatic:true});
 	World.add(world, packageBody);
 	
 
@@ -62,7 +64,6 @@ function draw() {
   rect(redBox1.position.x,redBox1.position.y,200,20)
   rect(redBox2.position.x,redBox2.position.y,20,100)
   rect(redBox3.position.x,redBox3.position.y,20,100)
-
 
   drawSprites();
  
